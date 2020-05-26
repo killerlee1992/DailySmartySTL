@@ -1,21 +1,30 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
-export default class RecentPosts extends Component {
-  render() {
-    return (
-      <div className="recent-posts">
-        <div className="recent-posts-wrapper">
-          <div className="recent-posts-heading">Recent Posts</div>
+import { connect } from 'react-redux';
 
-          <ul className="recent-posts-posts">
-            <li> post 0 </li>
-            <li> post 1 </li>
-            <li> post 2 </li>
-          </ul>
+import * as actions from '../actions';
 
-          <div className="recent-post-title"></div>
-        </div>
-      </div>
-    );
-  }
+class RecentPosts extends Component {
+
+    componentDidMount() {
+        this.props.fetchRecentPosts();
+    }
+
+    render() {
+        return (
+            <div className="recent-posts">
+                <div className="recent-posts__wrapper">
+                    <div className="recent-posts__heading">Recent Posts</div>
+                    <ul className="recent-posts__posts">
+                        <li>recent post 0</li>
+                        <li>recent post 1</li>
+                        <li>recent post 2</li>
+                    </ul>
+                </div>
+
+            </div>
+        )
+    }
 }
+
+export default connect(null, actions)(RecentPosts);
