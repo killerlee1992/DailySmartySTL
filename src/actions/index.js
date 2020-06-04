@@ -26,6 +26,7 @@ export function fetchPostWithQuery(query) {
                     type: SET_RESULTS_POSTS,
                     payload: response.data.posts
                 })
+                if (callback) { callback() }
             })
     }
 }
