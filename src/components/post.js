@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+<<<<<<< HEAD
 import AnimateHeight from 'react-animate-height';
 
 class Post extends Component {
@@ -11,6 +12,11 @@ class Post extends Component {
         }
     }
 
+=======
+
+class Post extends Component {
+
+>>>>>>> f5f6b0e0e1656ea712399b56aacf04dac690a0ab
     renderTopics() {
         let topics = this.props.associated_topics.map((topic, index) => {
             return <span className="post-topic" key={index}>{topic}</span>
