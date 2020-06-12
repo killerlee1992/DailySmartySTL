@@ -19,6 +19,10 @@ body {
     justify-items: center;
     // grid-template-rows: 1fr 2fr 1fr;
 }
+.logo-main, recent-posts{
+    display: grid;
+    justify-content: center;
+}
 
 $gray-one: #666666;
 $gray-two: #B3B3B3;
