@@ -2,7 +2,7 @@
   .search-bar__wrapper {
     display: grid;
     row-gap: 23px;
-    width: 1000px;
+    width: 100%;
     input {
       padding-left: 35px;
       color: $gray-one;
@@ -17,6 +17,8 @@
 
       &::placeholder {
         color: $gray-two;
+        font-family: 'Font Awesome\ 5 Free', 'Lato', Arial, Helvetica, sans-serif ;
+        font-weight: 600;
       }
 
       &:focus {
