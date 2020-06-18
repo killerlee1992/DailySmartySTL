@@ -29,6 +29,12 @@ $gray-two: #B3B3B3;
 $gray-three: #D8D8D8;
 $blue-one: #0079FF;
 
+.no-content{
+    color: $gray-one;
+    font-size: 14px;
+    line-height: 17px;
+}
+
 @import './mixin';
 @import './home';
 @import './searchBar';
